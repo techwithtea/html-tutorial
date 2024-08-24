@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML tutorial">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta name="author" content="Tech with tea">
+    <title>WEBSITE 2</title>
+   
+    <style>
+        .text {
+            color:white;
+            background-color: black;
+        }
+
+        #title {
+            color:red;
+        }
+
+        .styled-button {
+            background-color:antiquewhite;
+            color: brown;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Table</h1>
+
+    <table border="1">
+        <caption>List of Employees</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Project Manager</td>
+                <td>Management</td>
+                <td>jodndoe@email.com</td>
+            </tr>
+
+            <tr>
+                <td>Emily Johnson</td>
+                <td>UX Designer</td>
+                <td>Design</td>
+                <td>emily@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aliquid repudiandae doloremque asperiores ipsam assumenda iste numquam itaque, earum excepturi distinctio illum nemo quis sit, ducimus veritatis magni debitis! Placeat!
+    </div>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, tempore?</span>
+
+    <hr>
+    <iframe src="https://www.youtube.com/embed/K87aFjB7Ff0?si=DpaJUD0IRsLliTFc" title="nature video" width="400"></iframe>
+    <hr>
+    <div class="container">
+        <h1 id="title">Welcome to my webpage</h1>
+        <p class="text">this is paragraph one</p>
+        <p class="text">this is paragraph two</p>
+
+    </div>
+    <hr>
+
+    <button>Click me!</button>
+
+    <button type="submit" class="styled-button">Submit</button>
+    <button type="reset" class="styled-button">Reset</button>
+    <button type="button" class="styled-button">Button</button>
+
+    <button name="submitButton" type="submit" value="send" class="styled-button">click me!</button>
+    <hr>
+    <h1>Forms</h1>
+    <form action="/submit" post="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" requird>
+
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <labal for="female">Female</labal>
+        <input type="radio" id="other" name="gender" value="other">
+        <labal for="other">Other</labal>
+
+        <br>
+        <label for="subscribe">Subscribe to our newsletter</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+
+        <br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+
+    <a href="index.html">PREVIOUS PAGE</a>
+
+</body>
+
+</html>
